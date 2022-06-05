@@ -1,4 +1,25 @@
 header {
     background-color: green;
-    text-align: center;
+    font-size: 15px;
+
+}
+
+nav {
+    text-align: end;
+}
+
+nav {
+    background-color: chartreuse;
+}
+
+footer {
+    background-color: blue;
+}
+
+.about {
+    background-color: aqua;
+}
+
+a {
+    font-size: 10px;
 }
