@@ -1,19 +1,26 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
 header {
     font-size: 15px;
 
 }
 
 nav {
-    text-align: end;
-}
-
-footer {
+    justify-content: right;
     font-size: 20px;
-
+    
 }
 
 a {
-    font-size: 10px;
+    flex: auto;
+    justify-content: left;
+}
+
+footer {
+    font-size: 15px;
 
 }
 
@@ -21,7 +28,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#7CCC84, #004207);
+    background-image: linear-gradient(45deg, #7CCC84, #004207);
 }
 
 html {
@@ -29,7 +36,7 @@ html {
 }
 
 .content {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .footer {
@@ -41,3 +48,53 @@ html {
     text-align: center;
 }
 
+.contact {
+    height: 20em;
+    width: 20em;
+    border-radius: 5px;
+    background-color: #393b36;
+    padding: 10px;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #092800;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #055f4e;
+    color: antiquewhite;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #05463a;
+}
+
+@media screen and (max-width: 600px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+    
+}
+
+.adams img {
+    height: 350px;
+    width: 1500px;
+}
+
+.daniel img {
+    height: 200px;
+    width:100px;
+}
